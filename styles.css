@@ -1,0 +1,99 @@
+body, h1, nav, ul, li, a {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Main content */
+.content {
+	padding: 16px;
+	margin-top: 40px;
+	max-width: 800px;
+}  
+
+.image-default {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+/* Table */
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+	vertical-align: top;
+}
+th {
+	background-color: #f2f2f2;
+	text-align: center;
+}
+ul {
+	padding: 18px;
+	margin: 0;
+}
+li {
+	padding: 2px 0; /* Adds some space between list items */
+}
+
+
+/* Style the navigation bar */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+/* Navigation links */
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* The hamburger menu */
+.menu-icon {
+	display: none;
+	color: white;
+	float: right;
+	padding: 14px 16px;
+	cursor: pointer;
+}
+
+/* When the screen is less than 600 pixels wide, hide all nav items and display the hamburger menu */
+@media screen and (max-width: 600px) {
+	.navbar a {display: none;}
+	.menu-icon {display: block;}
+}
+
+/* The container for the menu items */
+.menu-container {
+	clear: both;
+	position: fixed;
+	background-color: #333;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+
+/* Menu items */
+.menu-container a {
+	display: block;
+	color: white;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+}

@@ -12,7 +12,6 @@ body {
 .content {
 	padding: 16px;
 	margin-top: 40px;
-	max-width: 800px;
 }  
 
 .image-default {
@@ -102,6 +101,9 @@ li {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
+	max-width: 800px; /* Set your desired maximum width */
+    margin: 0 auto; /* This centers the div */
+    width: 100%; /* Ensures the div takes up the full width up to the max-width */
 }
 
 .grid-item {
@@ -118,4 +120,23 @@ li {
 
 .grid-item p {
     margin: 5px 0 0; /* Adjust margin as needed */
+}
+
+ul {
+    padding-left: 10%; /* Adds padding on the left */
+    text-align: left; /* Ensures text is aligned to the left */
+}
+
+ul li {
+    text-align: left; /* Ensures text is aligned to the left */
+    position: relative; /* Positions the pseudo-element relative to the li */
+	max-width: 800px; /* Set your desired maximum width */
+    margin: 0 auto; /* This centers the div */
+    width: 100%; /* Ensures the div takes up the full width up to the max-width */
+}
+
+p {
+    max-width: 800px; /* Set your desired maximum width */
+    margin: 0 auto; /* This centers the div */
+    width: 100%; /* Ensures the div takes up the full width up to the max-width */
 }

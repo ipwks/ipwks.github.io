@@ -14,9 +14,14 @@ body {
 	margin-top: 40px;
 }  
 
-.image-default {
+.image-lund {
+	max-width: 600px;
+	max-height: 600px;
+}
+
+.image-borgen {
 	max-width: 300px;
-	max-height: 300px;
+	max-height: 500px;
 }
 
 /* Table */
@@ -53,6 +58,9 @@ li {
 	top: 0;
 	width: 100%;
 	z-index: 10;
+	display: flex;
+    justify-content: center; /* This centers the items horizontally */
+    align-items: center; /* This centers the items vertically if the navbar has a specific height */
 }
 
 /* Navigation links */
@@ -80,6 +88,7 @@ li {
 	.menu-icon {display: block;}
 }
 
+  
 /* The container for the menu items */
 .menu-container {
 	clear: both;

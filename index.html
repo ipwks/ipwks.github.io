@@ -40,7 +40,7 @@
 		<!-- Main section -->
 		<h1 id="home">7th International IP workshop</h1>
 		<p>We are happy to announce that the <b>7th International IP workshop will take place between 28th - 30th May 2024 in the heart of Lund, Sweden.</b><br>Please save the dates!</p>
-		<img src="src/images/lund-univ2.jpg" alt="Lund University Building" class="image-default">
+		<img src="src/images/lund-univ2.jpg" alt="Lund University Building" class="image-lund">
 		<p>Lund is well connected to the European train system. The nearest well-connected international airport is Copenhagen/Denmark, and there are a limited number of international flights to Malmö Airport.</p>
 		<p>Since Lund is usually very populated with tourist by this time of the year, we strongly recommend an early booking of the hotel. A list of hotels <a href="https://visitlund.se/en/accommodation-and-travel/stay-in-lund" target=”_blank”>can be found here</a>.</p>
 		<p>More information will be sent out in autumn of this year. We are looking forward to welcoming all of you in Sweden next year</p>
@@ -51,16 +51,16 @@
 		<!-- VENUE -->
 		<h2 id="venue">Venue</h2>
 		<p>The venue is the beautiful <a href="https://goo.gl/maps/Vsj4SUjitdTe2uh36" target=”_blank”>AF Borgen</a>, in the heart of Lund.</p>
-		<img src="src/images/af-borgen2.jpg" alt="AF-Borgen" class="image-default">
+		<img src="src/images/af-borgen2.jpg" alt="AF-Borgen" class="image-borgen">
 		
 		<!-- ABSTRACTS -->
 		<h2 id="abstracts">Abstract Submission</h2>
-		<p>Please use <a href="https://github.com/ipwks/ipwks.github.io/raw/main/IPWS_abstract_template.docx">the provided template</a> to submit your abstract. The abstract should be maximum two pages in total. The deadline is <b>February 28th 2024</b>! All abstracts will be openly available and published on the website after the workshop.</p>
+		<p>Please use <a href="https://github.com/ipwks/ipwks.github.io/raw/main/IPWS_abstract_template.docx">the provided template</a> to submit your abstract. The abstract should be maximum two pages in total. The deadline is <b>February 29th 2024</b>! All abstracts will be openly available and published on the website after the workshop.</p>
 		<p>Send the abstract as pdf (not password protected) <a href="mailto:internationalipworkshop@gmail.com">InternationalIPWorkshop@gmail.com</a>. State the title in the email subject. </p>
 
 		<!-- REGISTRATION -->
 		<h2 id="registration">Registration</h2>
-		<p>The registration opens soon. The deadline for registration is <b>April 30th, 2024</b>. Registration fees are 400€+VAT (300€+VAT for students)</p>
+		<p>The registration opens soon. The deadline for registration is <b>April 30th, 2024</b>. Registration fees are approximately 400€+VAT (300€+VAT for students)</p>
 		<p>You can register via this link.</p>
 		
 		<!-- SPONSORSHIP -->
@@ -161,6 +161,28 @@
             }
         }
     </script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					let targetId = this.getAttribute('href');
+					let target = document.querySelector(targetId);
+					if (target) {
+						let navbarHeight = 56; // Height of your navbar
+						let targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+						window.scrollTo({
+							top: targetPosition,
+							behavior: 'smooth'
+						});
+					}
+				});
+			});
+		});
+	</script>
 
 </body>
 </html>

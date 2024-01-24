@@ -110,21 +110,31 @@ li {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr); /* Eight columns */
     grid-gap: 10px;
-	max-width: 800px; /* Set your desired maximum width */
+	max-width: 600px; /* Set your desired maximum width */
     margin: 0 auto; /* This centers the div */
     width: 100%; /* Ensures the div takes up the full width up to the max-width */
 }
 
+/* Spanning the first row items across two columns each */
+.grid-item:nth-child(-n+4) {
+	grid-column: span 2;
+}
+  
+/* Positioning the second row items */
+.grid-item:nth-child(5) { grid-column: 2 / span 2; }
+.grid-item:nth-child(6) { grid-column: 4 / span 2; }
+.grid-item:nth-child(7) { grid-column: 6 / span 2; }
+
 .grid-item {
-    width: 100px; /* Adjust the width as needed */
+    width: 150px; /* Adjust the width as needed */
     height: auto; /* Height is set to auto to accommodate the text */
     text-align: center; /* Centers the text below the image */
 }
 
 .grid-item img {
-    width: 150%;
+    width: 100%;
     height: 150px; /* Adjust as needed to maintain aspect ratio */
     object-fit: cover;
 }

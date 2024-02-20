@@ -170,11 +170,89 @@ p {
 	margin: 0 auto; /* This centers the div */
 	margin-top: 20px;
 	width: 100%; /* Ensures the div takes up the full width up to the max-width */
-  }
-  .container h1 {
+}
+.container h1 {
 	font-size: xx-large; 
 	margin-right: 20px; /* Adds some space between the h1 and the image */
+}
+.container img {
+	height: 100px; /* Sets the height of the image */
+}
+
+.flex-container-gold {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items in the container */
+    align-items: center; /* Vertically centers items */
+    max-width: 600px; /* Maximum width of the flex container */
+    margin: 0 auto; /* Centers the flex container in the middle of the page */
+}
+
+.flex-item-gold {
+    flex: 0 0 250px; /* Do not grow or shrink, fixed width of 250px */
+    box-sizing: border-box;
+    padding: 5px; /* Adjusts spacing around items */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally in the flex item */
+    align-items: center; /* Centers the image vertically in the flex item */
+    height: auto; /* Adjust height automatically */
+    max-height: 200px; /* Maximum height for each item */
   }
-  .container img {
-    height: 100px; /* Sets the height of the image */
+
+.flex-item-gold img {
+    max-width: 100%; /* Ensures image does not exceed its container's width */
+    max-height: 200px; /* Maximum height of the image */
+    height: auto; /* Adjusts height to maintain aspect ratio */
+  }
+
+  .flex-container-silver {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items in the container */
+    align-items: center; /* Vertically centers items */
+    max-width: 600px; /* Maximum width of the flex container */
+    margin: 0 auto; /* Centers the flex container in the middle of the page */
+}
+
+.flex-item-silver {
+    flex: 0 0 150px; /* Do not grow or shrink, fixed width of 250px */
+    box-sizing: border-box;
+    padding: 5px; /* Adjusts spacing around items */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally in the flex item */
+    align-items: center; /* Centers the image vertically in the flex item */
+    height: auto; /* Adjust height automatically */
+    max-height: 200px; /* Maximum height for each item */
+  }
+
+.flex-item-silver img {
+    max-width: 100%; /* Ensures image does not exceed its container's width */
+    max-height: 150px; /* Maximum height of the image */
+    height: auto; /* Adjusts height to maintain aspect ratio */
+  }
+
+  .flex-container-bronze {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items in the container */
+    align-items: center; /* Vertically centers items */
+    max-width: 600px; /* Maximum width of the flex container */
+    margin: 0 auto; /* Centers the flex container in the middle of the page */
+}
+
+.flex-item-bronze {
+    flex: 0 0 100px; /* Do not grow or shrink, fixed width of 250px */
+    box-sizing: border-box;
+    padding: 5px; /* Adjusts spacing around items */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally in the flex item */
+    align-items: center; /* Centers the image vertically in the flex item */
+    height: auto; /* Adjust height automatically */
+    max-height: 200px; /* Maximum height for each item */
+  }
+
+.flex-item-bronze img {
+    max-width: 100%; /* Ensures image does not exceed its container's width */
+    max-height: 100px; /* Maximum height of the image */
+    height: auto; /* Adjusts height to maintain aspect ratio */
   }

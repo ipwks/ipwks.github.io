@@ -241,7 +241,7 @@ p {
 }
 
 .flex-item-bronze {
-    flex: 0 0 100px; /* Do not grow or shrink, fixed width of 250px */
+    flex: 0 0 150px; /* Do not grow or shrink, fixed width of 250px */
     box-sizing: border-box;
     padding: 5px; /* Adjusts spacing around items */
     display: flex;

@@ -255,4 +255,19 @@ p {
     max-width: 100%; /* Ensures image does not exceed its container's width */
     max-height: 100px; /* Maximum height of the image */
     height: auto; /* Adjusts height to maintain aspect ratio */
-  }
+}
+
+#two-column-list {
+    column-count: 2;  /* This creates two columns */
+    width: 50%;       /* Adjust the width as necessary */
+    margin: auto;     /* This centers the list on the page */
+}
+
+#two-column-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#two-column-list li {
+    margin-bottom: 10px;
+}
